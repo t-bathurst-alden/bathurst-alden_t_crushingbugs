@@ -42,6 +42,10 @@ h1, p {
     height: 70px;
 }
 
+.target-zone:hover {
+    background-color: rgba(59, 59, 59, 0.1);
+}
+
 #heart {
     top: 42%;
     left: 50%;

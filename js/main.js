@@ -3,8 +3,8 @@ console.log("JavaScript File is linked");
 const labels = document.querySelectorAll(".label");
 const targetZones = document.querySelectorAll(".target-zone");
 let currentDraggedElement = null;
-let resetBtn = true;
-const labelbox = document.getElementById('label-box');
+const resetBtn = document.getElementById("reset-btn");
+const labelBox = document.getElementById("label-box");
 
 
 //functions 
@@ -35,13 +35,9 @@ function dropped(e) {
     currentDraggedElement = null;
 }
 
-function reset (e) {
-    e.preventDefault();
+function reset () {
     console.log("User reset progress");
-    if (resetBtn = true) {
-        return;
-    }
-
+    window.location.reload();
 }
 
 
@@ -64,7 +60,7 @@ targetZones.forEach(zone => {
     zone.addEventListener ("drop", dropped);
 })
 
-
+resetBtn.addEventListener("click", reset)
 
 //add event listener for reset button
 //listen for click event, call a reset function

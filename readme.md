@@ -36,6 +36,8 @@ Tried using if(targetzone.children.length=<0) for a reset. Return command not fu
 
 Ended up going with a function that reloads the page entirely as a nuclear option.
 
+Changed getelementbyid to queryselector.
+
 ## Credits
 Tegan Bathurst-Alden
 ## License
